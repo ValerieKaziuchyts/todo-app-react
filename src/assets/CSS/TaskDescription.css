@@ -1,0 +1,56 @@
+/* Color pallete ------------------*/
+/* Fonts family ------------------*/
+/* Fonts size ------------------*/
+.task-description-bgr {
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 580px;
+  background-color: white;
+  box-shadow: 0 0 100px #bebebe;
+  z-index: 2;
+}
+.info-container {
+  padding: 0 45px;
+}
+.icon-task-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.task-semibold-name {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 24px;
+}
+.grey-text {
+  margin-right: 18px;
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+  color: #A0A0A0;
+  width: 100px;
+}
+.task-info-text {
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+  color: black;
+  width: 350px;
+  word-break: break-all;
+}
+.scroll-description-text {
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+  color: black;
+  max-height: 150px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+.scroll-description-text::-webkit-scrollbar {
+  width: 0px;
+}
+.scroll-description-text:hover {
+  overflow-y: scroll;
+}
+.links {
+  display: inline-block;
+}

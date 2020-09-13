@@ -1,0 +1,204 @@
+@import './variables.less';
+
+/* Mixins ------------------*/
+.standard-btn {
+  padding: 5px 0;
+  width: 80px;
+  color: @color-btn-text;
+  border: 1px solid @color-btn-text;
+  border-radius: 30px;
+}
+.standard-input {
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: @input-bgr-color;
+  outline: none;
+  font-family: @regular-font;
+  font-size: 14px;
+}
+
+/* Create a task block ------------------*/
+.main-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.container-bgr {
+  display: inline-block;
+  padding-top: 30px;
+  position: relative;
+  width: 55%;
+  min-width: 600px;
+  max-width: 1000px;
+  background-color: @windows-color;
+}
+.edit-container-bgr {
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  display: inline-block;
+  padding-top: 30px;
+  width: 55%;
+  min-width: 600px;
+  max-width: 1000px;
+  background-color: @windows-color;
+  z-index: 2;
+}
+.edit-container-bgr-category {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  display: inline-block;
+  padding-top: 30px;
+  width: 20%;
+  min-width: 500px;
+  max-width: 1000px;
+  background-color: @windows-color;
+}
+.input-category-name {
+  margin-right: 18px;
+  width: 130px;
+  font-family: @regular-font;
+  font-size: @main-size;
+}
+.input-category-short {
+  .standard-input();
+  width: 60%;
+}
+.input-category-short:focus {
+  border: none;
+}
+.inputs-container {
+  padding: 0 50px;
+}
+.block-name {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: @medium-font;
+  font-size: @accent-size;
+}
+.input-name {
+  margin-right: 18px;
+  width: 100px;
+  font-family: @regular-font;
+  font-size: @main-size;
+}
+.horizontal-container {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.categories-container {
+  position: absolute;
+  left: 168px;
+  top: 155px;
+  width: 29.2%;
+}
+.category-search-name {
+  padding: 5px 5px;
+  background-color: @input-bgr-color;
+  width: 100%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-family: @regular-font;
+  font-size: @btn-semibold-size;
+  box-sizing: border-box;
+  text-align: left;
+}
+.category-search-name:hover {
+  background-color: @accent-color;
+  color: @menu-btn-text-active-color;
+}
+.horizontal-container:last-child {
+  margin-bottom: 30px;
+}
+.input-long {
+  .standard-input();
+  width: calc(100% - 118px);
+}
+.input-long:focus {
+  border: none;
+}
+.empty-input {
+  border: 1px solid @accent-color;
+}
+.input-short{
+  .standard-input();
+  width: 32%;
+}
+.description-area {
+  .standard-input();
+  width: calc(100% - 118px);
+  height: 200px;
+}
+.bottom-btns-panel {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: @accent-color;
+}
+.cancel-btn {
+  .standard-btn();
+}
+.cancel-btn:disabled {
+  color: rgb(49, 49, 49);
+  border-color: rgb(49, 49, 49);
+}
+.cancel-btn:disabled:hover {
+  color: rgb(49, 49, 49);
+  border-color: rgb(49, 49, 49);
+  background-color: transparent;
+}
+.save-btn {
+  .standard-btn();
+  margin-left: 25px;
+}
+.cancel-btn:hover, .save-btn:hover {
+  background-color: @windows-color;
+  color: @accent-color;
+}
+.category-plus-btn {
+  margin-left: 10px;
+}
+
+/* Modal block ------------------*/
+.modal-container {
+  position: fixed;
+  top: 30%;
+  padding-top: 30px;
+  height: 160px;
+  background-color: @windows-color;
+  box-shadow: 0 0 100px rgb(190, 190, 190);
+  z-index: 2;
+}
+.edit-modal-container {
+  position: fixed;
+  top: 25%;
+  left: 43%;
+  padding-top: 30px;
+  height: 160px;
+  background-color: @windows-color;
+  box-shadow: 0 0 100px rgb(190, 190, 190);
+  z-index: 10;
+}
+.edit-modal-container-category {
+  position: fixed;
+  top: 25%;
+  left: 45%;
+  padding-top: 30px;
+  height: 160px;
+  background-color: @windows-color;
+  box-shadow: 0 0 100px rgb(190, 190, 190);
+  z-index: 10;
+}
+.inner-text-container {
+  padding: 0 50px;
+}
+.message-description {
+  margin-bottom: 30px;
+  font-family: @regular-font;
+  font-size: @main-size;
+  white-space: nowrap;
+}

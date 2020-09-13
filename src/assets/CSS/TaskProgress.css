@@ -1,0 +1,75 @@
+/* Color pallete ------------------*/
+/* Fonts family ------------------*/
+/* Fonts size ------------------*/
+.progress-category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.progress-block-bgr {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  max-height: 600px;
+  box-sizing: border-box;
+}
+.scroll-container {
+  overflow-y: hidden;
+  height: 500px;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 0px;
+}
+.scroll-container:hover {
+  overflow-y: scroll;
+}
+.top-name-block {
+  padding: 25px 30px;
+  font-family: 'Montserrat-Medium';
+  font-size: 24px;
+  text-align: center;
+}
+.bottom-block {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.grey-light-text {
+  font-family: 'Montserrat-Regular';
+  font-size: 0.7em;
+  color: #ACACAC;
+}
+.grey-light-text-btn {
+  font-family: 'Montserrat-Regular';
+  font-size: 0.7em;
+  color: #ACACAC;
+}
+.options-container {
+  display: flex;
+}
+.edit-btn {
+  margin-right: 8px;
+}
+.progress {
+  margin-left: -2%;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 10px;
+  width: 1250px;
+}
+.progress-done {
+  background: linear-gradient(to right, #BD82FE, #47A7FF, #10F6FC);
+  border-radius: 20px;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease-out;
+  animation: moveProgress 2s ease-out;
+  animation-fill-mode: both;
+}

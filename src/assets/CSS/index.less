@@ -1,0 +1,28 @@
+@import './fonts.css';
+@import './variables.less';
+body {
+  margin: 0;
+  background-color: @background-color;
+}
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.router-link {
+  text-decoration: none;
+}
+.router-link:last-child {
+  border-bottom: 1px solid #D5DBE8;
+}
+button, a {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: auto;
+}
+a {
+  color: @accent-color;
+  text-decoration: underline @accent-color;
+}

@@ -1,0 +1,122 @@
+/* Color pallete ------------------*/
+/* Fonts family ------------------*/
+/* Fonts size ------------------*/
+/* Mixins ------------------*/
+.big-size-btn {
+  padding: 8px 25px;
+  color: white;
+  font-family: 'Montserrat-SemiBold';
+  font-size: 0.9em;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Right panel ------------------*/
+.block-right {
+  padding-left: 150px;
+}
+/* Sidebar ------------------*/
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 100%;
+  width: 150px;
+  background: white;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13.2% 15%;
+  background-color: white;
+}
+.logo {
+  width: 80%;
+}
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24% 0%;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #e3e7f0;
+}
+.active {
+  background-color: #1D7BFE;
+}
+.active .menu-button-name {
+  color: white;
+}
+.active .menu-button-img {
+  filter: brightness(1000%);
+}
+.menu-button-img {
+  margin-bottom: 5%;
+  width: 30%;
+  fill: red;
+}
+.menu-button-name {
+  font-family: 'Montserrat-Medium';
+  font-size: 1.2em;
+}
+/* Header ------------------*/
+header {
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(168, 168, 168, 0.13) 0%, #ffffff 1.5%);
+}
+.search-input {
+  padding: 5px 45px;
+  height: 25px;
+  width: 30%;
+  min-width: 300px;
+  background: url(../img/search.png) no-repeat 10px 5px;
+  background-size: auto 70%;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+  outline: none;
+}
+.search-input:focus {
+  background-color: #f1f1f1;
+}
+.sign-in-button {
+  padding: 8px 25px;
+  color: white;
+  font-family: 'Montserrat-SemiBold';
+  font-size: 0.9em;
+  border-radius: 30px;
+  white-space: nowrap;
+  background: linear-gradient(to right, #936FDD, #CE7EF1);
+}
+.sign-up-button {
+  padding: 8px 25px;
+  color: white;
+  font-family: 'Montserrat-SemiBold';
+  font-size: 0.9em;
+  border-radius: 30px;
+  white-space: nowrap;
+  margin-left: 15px;
+  background: linear-gradient(to right, #0E74DC, #04ABF0);
+}
+.settings-btn {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+}
+.settings-btn:hover {
+  filter: sepia(100%) hue-rotate(180deg) saturate(500%);
+}

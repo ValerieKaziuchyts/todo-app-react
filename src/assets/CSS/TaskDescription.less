@@ -1,0 +1,55 @@
+@import './variables.less';
+
+.task-description-bgr {
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 580px;
+  background-color: @windows-color;
+  box-shadow: 0 0 100px rgb(190, 190, 190);
+  z-index: 2;
+}
+.info-container {
+  padding: 0 45px;
+}
+.icon-task-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.task-semibold-name {
+  font-family: @semibold-font;
+  font-size: @accent-size;
+}
+.grey-text {
+  margin-right: 18px;
+  font-family: @regular-font;
+  font-size: @main-size;
+  color: #A0A0A0;
+  width: 100px;
+}
+.task-info-text {
+  font-family: @regular-font;
+  font-size: @main-size;
+  color: @main-text-color;
+  width: 350px;
+  word-break: break-all;
+}
+.scroll-description-text {
+  font-family: @regular-font;
+  font-size: @main-size;
+  color: @main-text-color;
+  max-height: 150px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+.scroll-description-text::-webkit-scrollbar {
+  width: 0px;
+}
+.scroll-description-text:hover{
+  overflow-y: scroll;
+}
+.links {
+  display: inline-block;
+}

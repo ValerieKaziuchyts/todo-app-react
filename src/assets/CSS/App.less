@@ -1,0 +1,108 @@
+@import './variables.less';
+
+/* Mixins ------------------*/
+.big-size-btn {
+  padding: 8px 25px;
+  color: @color-btn-text;
+  font-family: @semibold-font;
+  font-size: @btn-semibold-size;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right panel ------------------*/
+.block-right {
+  padding-left: 150px;
+}
+/* Sidebar ------------------*/
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 100%;
+  width: 150px;
+  background: @windows-color;
+}
+.logo-container {
+  .flex-center();
+  padding: 13.2% 15%;
+  background-color: @windows-color;
+}
+.logo {
+  width: 80%;
+}
+.menu-button {
+  .flex-center();
+  padding: 24% 0%;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid @dividing-line-color;
+}
+.active {
+  background-color: @accent-color;
+  .menu-button-name {
+    color: white;
+  }
+  .menu-button-img {
+    filter: brightness(1000%);
+  }
+}
+.menu-button-img {
+  margin-bottom: 5%;
+  width: 30%;
+  fill: red;
+}
+.menu-button-name {
+  font-family: @medium-font;
+  font-size: @medium-font-size;
+}
+/* Header ------------------*/
+header {
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(168, 168, 168, 0.13) 0%, rgba(255,255,255,1) 1.5%);
+}
+.search-input {
+  padding: 5px 45px;
+  height: 25px;
+  width: 30%;
+  min-width: 300px;
+  background: url(../img/search.png) no-repeat 10px 5px;
+  background-size: auto 70%;
+  border: none;
+  border-radius: 30px;
+  font-family: @regular-font;
+  font-size: @main-size;
+  outline: none;
+}
+.search-input:focus {
+  background-color: @input-bgr-color;
+}
+.sign-in-button {
+  .big-size-btn();
+  background: @first-btn-gradient;
+}
+.sign-up-button {
+  .big-size-btn();
+  margin-left: 15px;
+  background: @second-btn-gradient;
+}
+.settings-btn {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+}
+.settings-btn:hover {
+  filter: sepia(100%) hue-rotate(180deg) saturate(500%);
+}
