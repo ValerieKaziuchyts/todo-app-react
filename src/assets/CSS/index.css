@@ -1,0 +1,31 @@
+@import 'fonts.css';
+/* Color pallete ------------------*/
+/* Fonts family ------------------*/
+/* Fonts size ------------------*/
+body {
+  margin: 0;
+  background-color: #EDF0F5;
+}
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.router-link {
+  text-decoration: none;
+}
+.router-link:last-child {
+  border-bottom: 1px solid #D5DBE8;
+}
+button,
+a {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: auto;
+}
+a {
+  color: #1D7BFE;
+  text-decoration: underline #1D7BFE;
+}

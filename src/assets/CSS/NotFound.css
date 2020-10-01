@@ -1,0 +1,29 @@
+/* Color pallete ------------------*/
+/* Fonts family ------------------*/
+/* Fonts size ------------------*/
+.notFoundPage {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seoImg {
+  margin-bottom: 1%;
+  width: 40%;
+}
+.notFoundBoldText {
+  margin-bottom: 1%;
+  font-family: 'Montserrat-Medium';
+  font-size: 24px;
+  width: 350px;
+  text-align: center;
+}
+.notFoundHome {
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+}
+.greenNumbers {
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+  color: chartreuse;
+}
